@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sign Up</title>
+</head>
+<body background="images/kerala.jpg">   
+    <div class="contents">
+        <input class="btn btn-dark" type="button"  onclick="location.href='index.html'" value="Home"> 
+        <input class="btn btn-dark" type="button"  onclick="location.href='login.html'" value="Login">    
+        <input class="btn btn-dark" type="button"  onclick="#" value="Contact Us">     
+    </div>
+    <!-- <h2 class="heading">Create New Account</h2>  -->
+    <div  class="signupbox">
+        <form class="text-center border border-light p-5" action="login.html" onsubmit="return (validateSignup() && CheckPasswordStrength());">
+        <p class="h4 mb-4">Sign up your details</p>
+        <div class="form-row mb-4">
+            <div class="col">
+                <label for="fname"></label> 
+                <input type="text" id="fname" class="form-control" placeholder="First name">               
+            </div>
+            <div class="col">  
+                <label for="lname"></label> 
+                <input type="text" id="lname" class="form-control" placeholder="Last name">
+            </div>
+        </div>
+        <span id="errorName"></span>
+        <label for="zip"></label> 
+        <input type="text" id="zip" class="form-control" placeholder="Zipcode"><span id="errorZip"></span>
+        <label for="email"></label> 
+        <input type="text" id="email" class="form-control" placeholder="Enter your E-mail id"><span id="errorMail"></span>
+        <label for="pwd"></label> 
+        <input type="password" id="pwd" class="form-control" placeholder="Enter your password"><span id="password_strength"></span>   
+        <label for="mobile"></label> 
+        <input type="text" id="mobile" class="form-control" placeholder="Mobile number"><span id="errorMob"></span>             
+        <button class="btn btn-info btn-block my-4" type="submit">Submit</button>
+        <p>By clicking
+            <em>Sign up</em> you agree to our
+            <a href="" target="_blank">terms of service</a>
+    
+    </form>
+    </div>
+    <script src="signinIndex.js"></script>
+</body>
+</html>
